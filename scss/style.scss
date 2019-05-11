@@ -1,0 +1,228 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+//Default
+$bg: rgb(14, 167, 108);
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/77772941092f7cd23985d2e6042d82b8.jpg) no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding-left: 0;
+}
+div[data-state='off']{
+    display: none;
+    opacity: 1;
+}
+div[data-state='on']{
+    display: block;
+    opacity: 1;
+}
+.main{
+    position: relative;
+}
+//Menu
+.book {
+    position: absolute;
+    width: 400px;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h1 {
+        font-size: 70px;
+        font-weight: 700;
+        color: $bg;
+        text-align: center;
+        margin: 0;
+    }
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+
+    a {
+        position: relative;
+        font-size: 25px;
+        font-weight: 700;
+        color: $bg;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 1;
+    }
+    a:after{
+        display: block;
+        position: absolute;
+        content: '';
+        background-color: $bg;
+        height: 2px;
+        width: 0%;
+        left: 50%;
+        transition: width .3s ease-in-out;
+        transform: translateX(-50%);
+    }
+    a:hover:after,
+    a:focus:after{
+        width: 100%;
+    }    
+    ul {
+        text-align: center;
+    }
+}
+
+label {
+    font-size: 20px;
+    font-weight: 700;
+    color: $bg;
+}
+
+//Text
+.textbox {
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+
+    input {
+        margin-top: 5px;
+        width: 280px;
+        height: 27px;
+        outline: none;
+        border-radius: 50px;
+        border: 0;
+        padding-left: 5px;
+    }
+    a{
+        display: inline-block;
+        font-size: 35px;
+        font-weight: 700;
+        color: white;
+        width: 150px;
+        height: 45px;
+        background-color: $bg;
+        border-radius: 20px;
+        text-decoration: none; 
+        margin-top: 10px;
+    }
+}
+//Accept block
+.accept{
+    display: none;
+    position: absolute;
+    width: 100px;
+    left: 99%;
+    top: 100%;
+    transform: translate(-100%, -105%);
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 5px;
+    text-align: center;
+    span{
+        color: white;
+        font-size: 15px;
+    }
+    i{
+        font-size: 25px;
+        padding-right: 4px;
+        color: white;
+    }
+}
+
+//Archiv
+.archivebox{
+    position: relative;
+}
+.note__item{
+    display: flex;
+    align-items: center;
+    background-color: $bg;
+    padding: 5px 13px 5px 13px;
+    border: 1px solid black;
+    border-radius: 50px;
+    i{
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+}
+#date{
+    display: block;
+    position: absolute;
+    opacity: 0;
+    padding: 9px;
+    background: white;
+    left: 405px;
+    height: 18px;
+    width: 200px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    transition: 0.7s;
+    border-radius: 50px;
+}
+.note__item:hover #date{
+    opacity: 1;
+}
+.note__value{
+    width: 90%; 
+    font-size: 22px;
+    color: white;
+}
+.note__date{
+    display: block;
+    font-size: 15px; 
+}
+.not__found{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+    background: $bg;
+    border-radius: 50px;
+    span{
+        font-size: 35px;
+        font-weight: 700;
+        color: white;
+    }
+}
+
+//Audio
+// .audiobox {
+//     position: relative;
+//     text-align: center;
+//     input {
+//         margin-top: 7px;
+//         width: 240px;
+//         height: 22px;
+//         outline: none;
+//         border-radius: 50px;
+//         border: 0;
+//         padding-left: 5px;
+//     }
+
+//     a {
+//         display: inline-block;
+//         width: 100px;
+//         height: 100px;
+//         font-size: 70px;
+//         color: white;
+//         border-radius: 50px;
+//         background-color: $bg;
+//         margin-top: 18px;
+//     }
+
+//     i {
+//         margin-top: 13px;
+//     }
+
+// }
+
+// .note {
+//     margin-top: 17px;
+// }
