@@ -68,7 +68,7 @@ $(function () {
             $span.text('Accept!');
             $('.accept')
                         .fadeIn()
-                        .delay(2500)
+                        .delay(2000)
                         .fadeOut();
         }
     });
@@ -85,7 +85,7 @@ $(function () {
         $span.text('Delete!');
         $('.accept')
                     .fadeIn()
-                    .delay(2500)
+                    .delay(2000)
                     .fadeOut();
     });
     //Audio
