@@ -7,13 +7,11 @@ $(function () {
         $block.attr('data-state', 'off').animate({ //Attribute block's is 'off'
             opacity: 0
         }, 250);
-
         var $attr = $(this).attr('id');
         if ($attr == 'text') { //Text input   
             $('.textbox').attr('data-state', 'on').animate({
                 opacity: 1
             }, 400);
-
         } else if ($attr == 'archive') { //Archive
             $('.archivebox').attr('data-state', 'on').animate({
                 opacity: 1
